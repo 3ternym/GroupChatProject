@@ -1,0 +1,22 @@
+<section class="m-3">
+    <div class="mb-3 row">
+        <h3>
+            Setup Profile
+        </h3>
+    </div>
+    <div class="mb-3 row">
+        <label class="col"> Enter username</label>
+        <input type="text" [(ngModel)]="user.userName" class="col form-control">
+    </div>
+    <div class="mb-3 row">
+        <label class="col">Choose chat colour</label>
+        <input class="col form-control" [(ngModel)]="user.chatColor" type="color">
+    </div>
+    <div class="mb-3 row">
+        <label class="col">Enter location</label>
+        <input class="col form-control" [(ngModel)]="user.location" type="text">
+    </div>
+    <div class="row">
+        <button (click)="processUserInfo()" class="btn btn-primary" >Join room</button>
+    </div>
+</section>
